@@ -1,0 +1,14 @@
+This folder contains an example code that can be run on the Open Data ntuples. A brief explanation of the content of this folder: 
+
+1.) MySelector.C/MySelector.h : 
+A so-called TSelector. C++ code. Runs over the ntuples and makes histograms which are stored in the Histograms folder. This runs over all 
+
+2.) runSelector.py : 
+Python script that runs the TSelector. Use 'Data' or 'MC' as input argument when running.     
+
+3.) MakePlots.py :  
+Python script that reads the histograms made by the TSelector, scale the samples to cross section and luminosity and makes plots in the Plots folder. Run with 'ee' or 'uu' as input argument.  
+Only plotting with data and SM background is implemented. Please check that you can reproduce these, and then move on to adding the signal samples relevant to your analysis. 
+
+4.) infofile.py : 
+Used in the plotting script to scale the MC samples to the right cross section and luminosity. (No need to open this file.) 
